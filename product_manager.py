@@ -18,3 +18,12 @@ class ProductManager:
             if product.name.lower() == name.lower():
                 return product
         return None
+
+    def remove_product(self, name):
+        product = self.find_product(name)
+
+        if product:
+            self.products.remove(product)
+            print(f"Product {name} removed successfully.")
+        else:
+            print(f"Product {name} not found.")
