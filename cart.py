@@ -18,6 +18,7 @@ class Cart:
 
         return total
 
+# Cart functionality branch update
     def display_cart(self):
         print("Shopping cart:")
 
